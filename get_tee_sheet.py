@@ -52,3 +52,9 @@ time.sleep(10)
 driver.find_element(By.CSS_SELECTOR, "body > div > form > table > tbody > tr:nth-child(18) > td > input[type=checkbox]:nth-child(2)").click()
 driver.find_element(By.CSS_SELECTOR, "body > div > form > table > tbody > tr:nth-child(19) > td > input").click()
 time.sleep(20)
+
+# if manually running code, uncomment code to run send_to_printer.py automatically after getting tee sheet
+# if using cron, set send_to_printer to run 2 minutes after get_tee_sheet 
+#with open("send_to_printer.py") as f:
+#	exec(f.read())
+
